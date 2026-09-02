@@ -7,6 +7,7 @@ You need to clone the repo inside your ros2 workspace at ~/ros2_ws/src
 execute the following command while inside the repo:
 ```bash
 chmod +x entrypoint.sh
+```
 
 # Modifying your .bashrc
 The *.bashrc* file is a **shell configuration file**. Everytime you open a terminal, a bash session starts, executing the *.bashrc*. You'll need to add a couple of macros and functions in your .bahsrc to work efficiently.
