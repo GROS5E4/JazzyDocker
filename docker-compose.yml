@@ -1,0 +1,22 @@
+services:
+  racecar:
+    privileged: true
+    build: .
+    container_name: racecar
+    volumes:
+      - ~/ros2_ws/src:/ros2_ws/src:rw
+      - /tmp/.X11-unix:/tmp/.X11-unix:rw
+      - /etc/nsswitch.conf:/etc/nsswitch.conf:ro
+      - /var/run/avahi-daemon/socket:/var/run/avahi-daemon/socket
+    environment:
+      - DISPLAY=${DISPLAY}
+      - MPLBACKEND=TkAgg
+      - ROS_DOMAIN_ID=42
+
+    network_mode: host
+    stdin_open: true
+    tty: true
+
+    working_dir: /ros2_ws
+
+
