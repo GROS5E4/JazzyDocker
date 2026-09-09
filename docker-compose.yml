@@ -11,7 +11,7 @@ services:
     environment:
       - DISPLAY=${DISPLAY}
       - MPLBACKEND=TkAgg
-      - ROS_DOMAIN_ID=42
+      - ROS_DOMAIN_ID=1
 
     network_mode: host
     stdin_open: true
