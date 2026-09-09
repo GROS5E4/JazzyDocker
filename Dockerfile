@@ -23,6 +23,7 @@ RUN apt-get update --fix-missing && \
     tmux \
     python3-pip \
     python3-tk \
+    python3-transforms3d \
     libeigen3-dev 
 
 RUN apt-get install -y ros-jazzy-rviz2 \
@@ -54,8 +55,6 @@ RUN apt-get install -y x11-apps \
     libnss-mdns
 
 
-# Fix for 'no module name 'numba' with docker compose 2.40
-RUN pip3 install transforms3d --break-system-packages
 
 RUN echo "export RCUTILS_COLORIZED_OUTPUT=1 " >> ~/.bashrc
 
