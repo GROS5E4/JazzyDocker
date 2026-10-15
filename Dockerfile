@@ -46,7 +46,8 @@ RUN apt-get install -y ros-jazzy-rviz2 \
     ros-jazzy-joy \
     ros-jazzy-joint-state-publisher \
     ros-jazzy-tf-transformations \
-    ros-jazzy-web-video-server
+    ros-jazzy-web-video-server \
+    ros-jazzy-rosbridge-server
 
 RUN apt-get install -y x11-apps \
     x11-apps xterm \
