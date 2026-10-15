@@ -45,15 +45,16 @@ RUN apt-get install -y ros-jazzy-rviz2 \
     ros-jazzy-joy-teleop \
     ros-jazzy-joy \
     ros-jazzy-joint-state-publisher \
-    ros-jazzy-tf-transformations
+    ros-jazzy-tf-transformations \
+    ros-jazzy-web-video-server
 
 RUN apt-get install -y x11-apps \
     x11-apps xterm \
     clang-format \
     openssh-client \
     iputils-ping \
-    libnss-mdns
-
+    libnss-mdns \
+    git
 
 
 RUN echo "export RCUTILS_COLORIZED_OUTPUT=1 " >> ~/.bashrc
