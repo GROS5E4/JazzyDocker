@@ -48,7 +48,9 @@ RUN apt-get install -y ros-jazzy-rviz2 \
     ros-jazzy-tf-transformations \
     ros-jazzy-web-video-server \
     ros-jazzy-rosbridge-server \
-    ros-jazzy-rtabmap-ros
+    ros-jazzy-rtabmap-ros \
+    ros-jazzy-rqt-reconfigure \
+    ros-jazzy-rqt-image-view
 
 RUN apt-get install -y x11-apps \
     x11-apps xterm \
@@ -56,7 +58,8 @@ RUN apt-get install -y x11-apps \
     openssh-client \
     iputils-ping \
     libnss-mdns \
-    git
+    git \
+    imagemagick
 
 RUN apt-get update --fix-missing && \
     apt-get install -y python3-matplotlib \
