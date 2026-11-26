@@ -49,9 +49,11 @@ RUN apt-get install -y ros-jazzy-rviz2 \
     ros-jazzy-web-video-server \
     ros-jazzy-rosbridge-server \
     ros-jazzy-rtabmap-ros \
+    ros-jazzy-rqt \
+    ros-jazzy-rqt-common-plugins \
     ros-jazzy-rqt-reconfigure \
-    ros-jazzy-rqt-image-view
-
+    ros-jazzy-rqt-image-view 
+    
 RUN apt-get install -y x11-apps \
     x11-apps xterm \
     clang-format \
