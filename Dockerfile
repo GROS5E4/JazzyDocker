@@ -51,7 +51,7 @@ RUN apt-get install -y ros-jazzy-rviz2 \
     ros-jazzy-rtabmap-ros \
     ros-jazzy-rqt \
     ros-jazzy-rqt-common-plugins \
-    ros-jazzy-rqt-tf_tree \
+    ros-jazzy-rqt-tf-tree \
     ros-jazzy-rqt-reconfigure \
     ros-jazzy-rqt-image-view 
 
