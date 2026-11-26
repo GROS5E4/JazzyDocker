@@ -61,7 +61,7 @@ RUN apt-get update --fix-missing && \
     apt-get install -y python3-matplotlib \
     python3-scipy 
 
-RUN pip3 install control minilink --break-system-packages
+RUN pip3 install control minilink graphviz --break-system-packages
 
 RUN echo "export RCUTILS_COLORIZED_OUTPUT=1 " >> ~/.bashrc
 
